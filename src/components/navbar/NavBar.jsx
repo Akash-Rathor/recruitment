@@ -1,4 +1,6 @@
 import React,{useState} from 'react';
+import Logo from '../../assets/images/comehire_light.png';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -13,7 +15,7 @@ const NavBar = () => {
       setIsHamburgerMenuVisible(!isHamburgerMenuVisible);
  };
 
-  const logo = process.env.REACT_APP_LOGO;
+  // const logo = process.env.REACT_APP_LOGO;
   return (
     <div>
 
@@ -34,14 +36,15 @@ const NavBar = () => {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
-                <img className="h-8 w-auto" src={logo} alt="Your Company" />
+                <button>
+                  <Link to='/'><img className="h-8 w-auto" src={Logo} alt="ComeHire" /></Link>
+                  </button>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4" >
-                <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
-                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
-                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+                <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Jobs</a>
+                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About Us</a>
+                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Companies</a>
                 </div>
               </div>
             </div>
@@ -74,10 +77,9 @@ const NavBar = () => {
 
         <div id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2" style={{ display: isHamburgerMenuVisible ? 'block' : 'none' }}>
-            <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+            <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Jobs</a>
+            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Us</a>
+            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Companies</a>
           </div>
         </div>
       </nav>

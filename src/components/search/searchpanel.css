@@ -1,0 +1,11 @@
+.heading{
+    text-align: 'center';
+    font-size: 200;
+}
+
+.pipe {
+    border: 1px solid var(--N400, #e7e7f1);
+    height: 20px;
+    margin: 0 10px;
+    background-color: var(--N400, #e7e7f1);
+}
