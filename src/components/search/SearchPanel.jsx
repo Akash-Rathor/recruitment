@@ -21,7 +21,7 @@ const SearchComponent = () => {
  };
 
  return (
-    <div className="container mx-auto px-20">
+    <div className="container mx-auto px-20 w-3/4">
       <div className='justify-center position-relative items-center flex flex-col sm:flex-col'>
         <h1 className="text-4xl font-bold mb-4 mt-20 heading-font">Find your dream job now</h1>
         <p className="text mb-4 mt-5">100k+ Jobs to explore</p>
@@ -39,7 +39,7 @@ const SearchComponent = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 aria-label="Search Term"
               />
-              <div className='border border-custom-gray h-5 mx-2 bg-custom-gray'></div>
+              <div className='border border-my-gray h-5 mx-2 bg-my-gray'></div>
               <input
               type="text"
               placeholder="Select Experience in years"
@@ -48,9 +48,9 @@ const SearchComponent = () => {
               onChange={handleExperienceChange}
               aria-label="Experience"
               />
-              <div className='border border-custom-gray h-5 mx-2 bg-custom-gray'></div>
+              <div className='border border-my-gray h-5 mx-2 bg-my-gray'></div>
               <select
-                className="p-2 mb-2 md:mb-0 flex-grow bg-white rounded-md p-2 focus:outline-none focus:ring-0 text-base shadow-md p-3.5"
+                className="mb-2 md:mb-0 flex-grow bg-white rounded-md focus:outline-none focus:ring-0 text-base shadow-md p-3.5"
                 value={location}
                 onChange={(e) => setLocation(e.target.value)}
                 aria-label="Location"
@@ -62,7 +62,7 @@ const SearchComponent = () => {
                 </select>
             </div>
             <button
-              className="bg-gray-800 hover:bg-blue-700 text-white ml-2 font-bold py-2 px-8 rounded-full"
+              className="bg-my-dark hover:bg-blue-700 text-white ml-2 font-bold py-2 px-8 rounded-full"
               onClick={handleSearch}
             >
               Search
