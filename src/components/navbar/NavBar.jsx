@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import Logo from '../../assets/images/comehire_dark.png';
+import Logo from '../../assets/images/letsdiscuss_dark.png';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {
@@ -37,14 +37,14 @@ const NavBar = () => {
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <button>
-                  <Link to='/'><img className="h-8 w-auto" src={Logo} alt="ComeHire" /></Link>
+                  <Link to='/'><img className="h-12 w-40" src={Logo} alt="LetsDiscuss" /></Link>
                   </button>
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4" >
-                <a href="#" className="bg-my-dark text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Jobs</a>
-                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About Us</a>
-                  <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Companies</a>
+                <a href="#" className="bg-my_logo_bg text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Jobs</a>
+                  <a href="#" className="text-my-grey-dark hover:bg-my_logo_bg hover:text-white rounded-md px-3 py-2 text-sm font-medium">About Us</a>
+                  <a href="#" className="text-my-grey-dark hover:bg-my_logo_bg hover:text-white rounded-md px-3 py-2 text-sm font-medium">Companies</a>
                 </div>
               </div>
             </div>
@@ -77,14 +77,12 @@ const NavBar = () => {
 
         <div id="mobile-menu">
           <div className="space-y-1 px-2 pb-3 pt-2" style={{ display: isHamburgerMenuVisible ? 'block' : 'none' }}>
-            <a href="#" className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Jobs</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Us</a>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Companies</a>
+            <a href="#" className="bg-my_logo_bg text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Jobs</a>
+            <a href="#" className="text-my-grey-dark hover:bg-my_logo_bg hover:text-white block rounded-md px-3 py-2 text-base font-medium">About Us</a>
+            <a href="#" className="text-my-grey-dark hover:bg-my_logo_bg hover:text-white block rounded-md px-3 py-2 text-base font-medium">Companies</a>
           </div>
         </div>
       </nav>
-
-
     </div>
   )
 }

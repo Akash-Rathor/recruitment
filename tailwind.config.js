@@ -16,7 +16,12 @@ module.exports = {
       'my-dark':'#1a202c',
       'my-hover':'#1a202c',
       'my-grey':'#e7e7f1',
+      'my-grey-dark':'#45454a',
       'my-light-grey':'#e7e7f1',
+      'my_logo_bg':'#BCEC7E',
+      'my_logo_light':'#EDFFDE',
+      'my_logo_dark':'#7ca349'
+
 
     },
   },
