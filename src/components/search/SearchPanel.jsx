@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './searchpanel.css';
+// import './searchpanel.css';
 
 const SearchComponent = () => {
  const [searchTerm, setSearchTerm] = useState('');
@@ -21,12 +21,14 @@ const SearchComponent = () => {
  };
 
  return (
-    <div className="container mx-auto px-20 heading">
-      <h1 className="text-4xl font-bold mb-4 mt-20 heading-font">Find your dream job now</h1>
-      <h1 className="text mb-4 mt-5 heading-font">100k+ Jobs to explore</h1>
+    <div className="container mx-auto px-20">
+      <div className='justify-center position-relative items-center flex flex-col sm:flex-col'>
+        <h1 className="text-4xl font-bold mb-4 mt-20 heading-font">Find your dream job now</h1>
+        <p className="text mb-4 mt-5">100k+ Jobs to explore</p>
+      </div>
       <div className="flex justify-center">
         <main className="container mx-auto mt-8">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full md:w-full bg-white rounded-lg shadow-md p-7">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between w-full md:w-full bg-white shadow-md p-7 rounded-full">
             <div className="flex flex-col md:flex-row md:items-center md:space-x-2 flex-grow">
               <i className="fas fa-search text-gray-800"></i>
               <input
@@ -37,7 +39,7 @@ const SearchComponent = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 aria-label="Search Term"
               />
-              <div className='pipe'></div>
+              <div className='border border-custom-gray h-5 mx-2 bg-custom-gray'></div>
               <input
               type="text"
               placeholder="Select Experience in years"
@@ -46,7 +48,7 @@ const SearchComponent = () => {
               onChange={handleExperienceChange}
               aria-label="Experience"
               />
-              <div className='pipe'></div>
+              <div className='border border-custom-gray h-5 mx-2 bg-custom-gray'></div>
               <select
                 className="p-2 mb-2 md:mb-0 flex-grow bg-white rounded-md p-2 focus:outline-none focus:ring-0 text-base shadow-md p-3.5"
                 value={location}
