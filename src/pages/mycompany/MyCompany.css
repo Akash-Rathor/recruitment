@@ -1,0 +1,11 @@
+/* MyCompany.css */
+
+/* Ensure the side panel covers 50% of the screen on mobile devices */
+@media (max-width: 768px) {
+   .side-panel {
+      width: 50%;
+      right: 0; /* Ensure it's aligned to the right */
+      left: auto; /* Reset the left property */
+   }
+  }
+  

@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import Logo from '../../assets/images/letsdiscuss_dark.png';
 import { Link } from 'react-router-dom';
+import MyCompany from '../../pages/mycompany/MyCompany';
 
 const NavBar = () => {
 
@@ -66,9 +67,9 @@ const NavBar = () => {
                   </button>
                 </div>
                 <div className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" style={{ display: isProfileMenuVisible ? 'block' : 'none' }} role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex="-1">
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-0">Your Profile</a>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-1">Settings</a>
-                  <a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-2">Sign out</a>
+                  <Link to='LetsDiscuss' onClick={toggleProfileMenu} component={MyCompany}><a href="#" className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-0">Your Company Profile</a></Link>
+                  <a href="#" onClick={toggleProfileMenu} className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-1">Settings</a>
+                  <a href="#" onClick={toggleProfileMenu} className="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabIndex="-1" id="user-menu-item-2">Sign out</a>
                 </div>
               </div>
             </div>
