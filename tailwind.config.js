@@ -20,7 +20,8 @@ module.exports = {
       'my-light-grey':'#e7e7f1',
       'my_logo_bg':'#BCEC7E',
       'my_logo_light':'#EDFFDE',
-      'my_logo_dark':'#7ca349'
+      'my_logo_dark':'#7ca349',
+      'my_sucess':'#58ad2d'
 
 
     },

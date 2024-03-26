@@ -5,8 +5,8 @@ import TopCompanies from '../../components/topcompanies/TopCompanies';
 const Home = () => {
   return (
     <div>
-      <SearchPanel/>
-      <TopCompanies/>
+      {/* <SearchPanel/> */}
+      {/* <TopCompanies/> */}
     </div>
   )
 }
